@@ -1,0 +1,16 @@
+.explore {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 2rem;
+
+    &__title {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    &__description {
+        color: #353535;
+        font-weight: 300;
+    }
+}
