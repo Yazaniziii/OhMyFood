@@ -1,0 +1,15 @@
+.localisation {
+    @include flex-center;
+    width: 100%;
+    background: $color-cinco;
+    padding: 1rem 0;
+    column-gap: 1.2rem;
+
+    &__icone {
+        font-size: 1.1rem;
+    }
+
+    &__title {
+        font-weight:600 ;
+    }
+}

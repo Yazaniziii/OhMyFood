@@ -26,10 +26,27 @@ li {
   justify-content: center;
   align-items: center;
   width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .header img {
   width: 10rem;
   padding: 1.3rem 0;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #EAEAEA;
+  padding: 1rem 0;
+  column-gap: 1.2rem;
+}
+.localisation__icone {
+  font-size: 1.1rem;
+}
+.localisation__title {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
