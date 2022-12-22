@@ -1,0 +1,9 @@
+.header {
+    @include flex-center;
+    width: 100%;
+
+    img {
+        width: 10rem;
+        padding: 1.3rem 0;
+    }
+}
