@@ -115,6 +115,57 @@ li {
   margin-left: 0.8rem;
 }
 
+.restaurants {
+  padding: 1rem;
+  padding-bottom: 3.5rem;
+  display: grid;
+  grid-template-rows: 3.5rem repeat(4, 1fr);
+  background-color: #f5f5f5;
+  row-gap: 1rem;
+}
+.restaurants__title {
+  padding-top: 1.5rem;
+}
+.restaurants__card {
+  cursor: pointer;
+  max-width: 340px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.restaurants__card div {
+  position: relative;
+}
+.restaurants__card div img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants__card div .restaurants-new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #99E2D0;
+  color: #008766;
+  padding: 0.3rem;
+  font-weight: 500;
+  border-radius: 0.1rem;
+}
+.restaurants__card__description {
+  position: relative;
+  padding: 0.5rem 0 0.8rem 0.8rem;
+}
+.restaurants__card__description h3 {
+  margin-bottom: 0.2rem;
+}
+.restaurants__card__description i {
+  position: absolute;
+  right: 1.2rem;
+  top: 1rem;
+  font-size: 1.2rem;
+}
+
 .button {
   padding: 0.8rem 1rem;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
