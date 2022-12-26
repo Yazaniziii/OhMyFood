@@ -1,0 +1,36 @@
+.footer {
+    background: #353535;
+    color: #fff;
+    padding: 1.5rem 0 2rem 1rem;
+    
+
+    &__logo {
+    font-family: 'Shrikhand';
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.6rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+
+            .fa-handshake-angle {
+                font-size: 11px;
+                display: block;
+            }
+
+            .fa-utensils {
+                font-size: 13px;
+            }
+        }
+    }
+
+
+}
