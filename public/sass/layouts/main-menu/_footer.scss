@@ -11,7 +11,7 @@
     margin-bottom: 1.5rem;
     }
 
-    ul {
+    &__block {
         display: flex;
         flex-direction: column;
         row-gap: 0.6rem;
@@ -33,4 +33,26 @@
     }
 
 
+}
+
+// Media Queries Footer
+@media (min-width: 1000px) {
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 1.5rem;
+        padding-right: 2rem;
+
+        &__logo {
+            order: 2;
+            margin: 0;
+        }
+
+        &__block {
+            flex-direction: row;
+            column-gap: 1.5rem;
+        }
+    }
 }
