@@ -52,21 +52,22 @@
 
 
 // Media Queries fonctionnement
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
     .fonctionnement {
         max-width: 1300px;
         margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
 
         &__container {
             flex-direction: row;
             column-gap: 2.5rem;
     
             &__cards {
-                min-width: 320px;
+                min-width: 260px;
+                max-width: 300px;
             }
         }
     }
