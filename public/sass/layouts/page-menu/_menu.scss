@@ -12,12 +12,16 @@
     //menu
 
 .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     width: 100%;
     top: -50px;
     background: $color-background;
     border-radius: 40px 40px 0px 0px;
     padding: 2rem 1rem;
+    max-width: 1200px;
 
     &__container {
         display: flex;
@@ -25,7 +29,8 @@
         align-items: center;
         position: relative;
         margin-bottom: 1.2rem;
-        max-width: 1400px;
+        max-width: 350px;
+        
 
         &__title {
             font-family: Shrikhand, sans-serif;
@@ -35,7 +40,7 @@
 
         &__heart {
             position: absolute;
-            right: 2rem;
+            right: 1.5rem;
             font-size: 20px;
         }
     }
@@ -46,16 +51,17 @@
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
+        margin-bottom: 2rem;
 
-        &__title {
-            font-weight: 300;
-            text-transform: uppercase;
-            font-size: 1rem;
-        }
-
-        hr {
+        &__border {
             width: 2.5rem;
-            border: 2px solid $color-tiers;
+            border-bottom: 2px solid $color-tiers;
+
+            &__title {
+                font-weight: 300;
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
         }
 
         &__block {
@@ -84,7 +90,46 @@
                 }
             }
         }
-
-
+       
     }
+
+    // button
+    &__button {
+        margin: auto;
+        width: 9rem;
+    }
+}
+
+// Media Queries
+@media (min-width: 1200px) {
+    .img-header-menu {
+        img{
+            height: 500px;
+        }
+        
+    }
+
+    .menu {
+        margin: auto;
+
+        &__container {
+            max-width: 800px;
+            margin: auto;
+            min-width: 800px;
+            margin-bottom: 2rem;
+            justify-content: center;
+
+            &__heart {
+                right: 13rem;
+            }
+        }
+
+        &__cards {
+            max-width: 800px;
+            min-width: 800px;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+    }
+
 }

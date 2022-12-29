@@ -267,12 +267,16 @@ li {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: 100%;
   top: -50px;
   background: #f7f7f7;
   border-radius: 40px 40px 0px 0px;
   padding: 2rem 1rem;
+  max-width: 1200px;
 }
 .menu__container {
   display: flex;
@@ -280,7 +284,7 @@ li {
   align-items: center;
   position: relative;
   margin-bottom: 1.2rem;
-  max-width: 1400px;
+  max-width: 350px;
 }
 .menu__container__title {
   font-family: Shrikhand, sans-serif;
@@ -289,7 +293,7 @@ li {
 }
 .menu__container__heart {
   position: absolute;
-  right: 2rem;
+  right: 1.5rem;
   font-size: 20px;
 }
 .menu__cards {
@@ -297,15 +301,16 @@ li {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  margin-bottom: 2rem;
 }
-.menu__cards__title {
+.menu__cards__border {
+  width: 2.5rem;
+  border-bottom: 2px solid #99E2D0;
+}
+.menu__cards__border__title {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 1rem;
-}
-.menu__cards hr {
-  width: 2.5rem;
-  border: 2px solid #99E2D0;
 }
 .menu__cards__block {
   padding: 0.6rem 1rem 0.6rem 0.6rem;
@@ -330,7 +335,36 @@ li {
 .menu__cards__block__description .menu--cards-price {
   font-weight: 600;
 }
+.menu__button {
+  margin: auto;
+  width: 9rem;
+}
 
+@media (min-width: 1200px) {
+  .img-header-menu img {
+    height: 500px;
+  }
+
+  .menu {
+    margin: auto;
+  }
+  .menu__container {
+    max-width: 800px;
+    margin: auto;
+    min-width: 800px;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  .menu__container__heart {
+    right: 13rem;
+  }
+  .menu__cards {
+    max-width: 800px;
+    min-width: 800px;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
 .button {
   padding: 0.8rem 1rem;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);

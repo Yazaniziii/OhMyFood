@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
     <!-- link Css -->
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../style.css">
     <!-- link Icone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Title -->
@@ -16,13 +16,109 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <img src="../../../ressources/images/logo/ohmyfood.png" alt="logo OhMyFood">
+    <header class="header header-menu">
+        <a href="../../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <img class="header-menu__img" src="../ressources/images/logo/ohmyfood.png" alt="logo OhMyFood">
     </header>
 
     <!-- Main -->
     <main>
-        
+        <div class="img-header img-header-menu">
+            <img src="../ressources/images/restaurants/folie-mericourt.jpg" alt="">
+        </div>
+
+        <section class="menu">
+
+            <div class="menu__container">
+                <h1 class="menu__container__title">La note enchantée</h1>
+                <i class="restaurants__card-heart menu__container__heart far fa-thin fa-heart"></i>
+                <i class="restaurants__card-heart menu__container__heart fa-solid fa-heart"></i>
+            </div>
+
+            <article class="menu__cards">
+                <div class="menu__cards__border">
+                    <h2 class="menu__cards__border__title">Entrées</h2>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Tartare de thon</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Assaisonné au yuzu</p>
+                        <p class="menu--cards-price">25€</p>
+                    </div>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Bouchée de homard croustillant</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Et sa farandole de petits légumes</p>
+                        <p class="menu--cards-price">35€</p>
+                    </div>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Velouté de cèpes</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Aux truffes</p>
+                        <p class="menu--cards-price">20€</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu__cards">
+                <div class="menu__cards__border">
+                    <h2 class="menu__cards__border__title">Plats</h2>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Poulet rôti aux herbes de Provence</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Et sa crème de truffe</p>
+                        <p class="menu--cards-price">40€</p>
+                    </div>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Langouste rôtie</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Et ses légumes de saison</p>
+                        <p class="menu--cards-price">35€</p>
+                    </div>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Côte de bœuf Angus</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Et sa purée de panais</p>
+                        <p class="menu--cards-price">44€</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu__cards">
+                <div class="menu__cards__border">
+                    <h2 class="menu__cards__border__title">Desserts</h2>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Farandole de desserts</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Du chef</p>
+                        <p class="menu--cards-price">18€</p>
+                    </div>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Crème brulée</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Revisitée</p>
+                        <p class="menu--cards-price">22€</p>
+                    </div>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Tiramisu</h3>
+                    <div class="menu__cards__block__description">
+                        <p>À la noisette</p>
+                        <p class="menu--cards-price">23€</p>
+                    </div>
+                </div>
+            </article>
+
+            <button class="button menu__button" type="button">Commander</button>
+
+        </section>
     </main>
 
     <!-- Footer -->
