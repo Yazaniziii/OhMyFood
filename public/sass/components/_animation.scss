@@ -1,0 +1,15 @@
+.fas-heart {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.fas-heart:hover {
+    opacity: 1;
+    @include linearGradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transform: scale(1.1);
+}
+

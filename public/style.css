@@ -387,4 +387,19 @@ li {
   border: 1px solid #9356DC;
 }
 
+.fas-heart {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.fas-heart:hover {
+  opacity: 1;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=style.css.map */
