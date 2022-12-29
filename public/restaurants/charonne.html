@@ -18,9 +18,9 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header header-menu">
         <a href="../../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <img src="../ressources/images/logo/ohmyfood.png" alt="logo OhMyFood">
+        <img class="header-menu__img" src="../ressources/images/logo/ohmyfood.png" alt="logo OhMyFood">
     </header>
 
     <!-- Main -->
@@ -30,32 +30,42 @@
         </div>
 
         <section class="menu">
-            <div>
-                <h2>La note enchantée</h2>
-                <i class="restaurants__card-heart far fa-thin fa-heart"></i>
-                <i class="restaurants__card-heart fa-solid fa-heart"></i>
+
+            <div class="menu__container">
+                <h1 class="menu__container__title">La note enchantée</h1>
+                <i class="restaurants__card-heart menu__container__heart far fa-thin fa-heart"></i>
+                <i class="restaurants__card-heart menu__container__heart fa-solid fa-heart"></i>
             </div>
-            <article>
-                <h3>Entrées</h3>
-                <div>
-                    <h4>Tartare de thon</h4>
-                    <div>
-                        <p>Assaisoné au yuzu</p>
-                        <p>25€</p>
+
+            <article class="menu__cards">
+                <h2 class="menu__cards__title">Entrées</h2>
+                <hr>
+                <div class="menu__cards__block">
+                    <h3>Ravioles de foie gras</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Accompagnées de leur crème à la truffe</p>
+                        <p class="menu--cards-price">25€</p>
                     </div>
                 </div>
-                <div>
-                    <h4>Bouchée de homard croustillant</h4>
-                    <div>
-                        <p>Et sa farandole de petits légumes</p>
-                        <p>35€</p>
+                <div class="menu__cards__block">
+                    <h3>Caviar osciètre</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Sur blini à la farine de blé noir</p>
+                        <p class="menu--cards-price">35€</p>
                     </div>
                 </div>
-                <div>
-                    <h4>Velouté de cèpes</h4>
-                    <div>
-                        <p>Aux truffes</p>
-                        <p>20€</p>
+                <div class="menu__cards__block">
+                    <h3>Homard et espuma de</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Marinés aux zestes d'orange</p>
+                        <p class="menu--cards-price">20€</p>
+                    </div>
+                </div>
+                <div class="menu__cards__block">
+                    <h3>Foie gras de canard cuit entier</h3>
+                    <div class="menu__cards__block__description">
+                        <p>Confiture de figue et pain toasté</p>
+                        <p class="menu--cards-price">35€</p>
                     </div>
                 </div>
             </article>

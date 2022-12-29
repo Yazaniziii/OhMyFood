@@ -1,7 +1,90 @@
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    
+    &__img {
+        margin: auto;
+    }
+}
+
+//main
+    //menu
+
 .menu {
     position: relative;
     width: 100%;
-    top: -55px;
+    top: -50px;
     background: $color-background;
     border-radius: 40px 40px 0px 0px;
+    padding: 2rem 1rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-bottom: 1.2rem;
+        max-width: 1400px;
+
+        &__title {
+            font-family: Shrikhand, sans-serif;
+            font-weight: 400;
+            font-size: 1.8rem;
+        }
+
+        &__heart {
+            position: absolute;
+            right: 2rem;
+            font-size: 20px;
+        }
+    }
+
+    //menu cards
+    &__cards {
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+
+        &__title {
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        hr {
+            width: 2.5rem;
+            border: 2px solid $color-tiers;
+        }
+
+        &__block {
+            padding: 0.6rem 1rem 0.6rem 0.6rem;
+            border-radius: 0.9rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            font-size: 0.9rem;
+            box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+
+            h3 {
+                font-weight: 500;
+                margin-bottom: 0.3rem;
+            }
+
+            &__description {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                font-weight: 300;
+
+                .menu--cards-price {
+                    font-weight: 600;
+                }
+            }
+        }
+
+
+    }
 }
