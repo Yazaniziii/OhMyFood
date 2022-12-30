@@ -85,7 +85,10 @@
             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             overflow: hidden;
-            
+            animation-name: delay;
+            animation-duration: 0.8s;
+            animation-fill-mode: forwards;
+            opacity: 0;
 
             &__description {
                 padding: 0.6rem 1rem 0.6rem 0.6rem;
@@ -142,6 +145,7 @@
             }
 
         }
+
        
     }
 

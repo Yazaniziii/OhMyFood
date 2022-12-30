@@ -335,6 +335,10 @@ li {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   overflow: hidden;
+  animation-name: delay;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 .menu__cards__block__description {
   padding: 0.6rem 1rem 0.6rem 0.6rem;
@@ -467,6 +471,54 @@ li {
 
 .menu__cards__block:hover > .menu--cards-animation {
   transform: translateX(-56px);
+}
+
+@keyframes delay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.2s;
+}
+
+.delay3 {
+  animation-delay: 0.3s;
+}
+
+.delay4 {
+  animation-delay: 0.4s;
+}
+
+.delay5 {
+  animation-delay: 0.5s;
+}
+
+.delay6 {
+  animation-delay: 0.6s;
+}
+
+.delay7 {
+  animation-delay: 0.7s;
+}
+
+.delay8 {
+  animation-delay: 0.8s;
+}
+
+.delay9 {
+  animation-delay: 0.9s;
+}
+
+.delay9 {
+  animation-delay: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
