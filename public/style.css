@@ -229,6 +229,9 @@ li {
 .footer__block a .fa-utensils {
   font-size: 13px;
 }
+.footer__block a:hover {
+  text-decoration: underline;
+}
 
 @media (min-width: 1000px) {
   .footer {
@@ -269,6 +272,7 @@ li {
   text-align: center;
   line-height: 1.7rem;
   font-size: 0.8rem;
+  transition: 0.3s;
 }
 .header-menu__img {
   margin: auto;
@@ -321,39 +325,65 @@ li {
   font-size: 1rem;
 }
 .menu__cards__block {
-  padding: 0.6rem 1rem 0.6rem 0.6rem;
   border-radius: 0.9rem;
   display: flex;
+  height: 100%;
   justify-content: space-between;
   align-items: flex-end;
   background: #fff;
   font-size: 0.9rem;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  text-overflow: ellipsis;
+  cursor: pointer;
+  overflow: hidden;
 }
 .menu__cards__block__description {
+  padding: 0.6rem 1rem 0.6rem 0.6rem;
   display: flex;
   flex-direction: column;
   font-weight: 300;
   white-space: nowrap;
   width: 100%;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__cards__block__description h3 {
   font-weight: 500;
   margin-bottom: 0.3rem;
   text-overflow: ellipsis;
+  padding-right: 1.5rem;
   overflow: hidden;
 }
 .menu__cards__block__description p {
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-right: 1rem;
 }
 .menu__cards__block .menu--cards-price {
   font-weight: 600;
   height: 100%;
-  padding-left: 2rem;
+  padding: 0 1rem 0.6rem 1rem;
   white-space: nowrap;
+  transition: all ease-in-out 0.2s;
+}
+.menu__cards__block .menu--cards-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -3.5rem;
+  width: 3.5rem;
+  height: 100%;
+  background: #99E2D0;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 22px;
+  border-radius: 0 0.9rem 0.9rem 0;
+  transition: all ease-in-out 0.2s;
+}
+.menu__cards__block .menu--cards-animation i {
+  background-color: #fff;
+  display: block;
+  height: 100%;
+  background: #99E2D0;
 }
 .menu__button {
   margin: auto;
@@ -429,6 +459,14 @@ li {
 
 .animation-arrow:active {
   box-shadow: none;
+}
+
+.menu__cards__block:hover > .menu--cards-price {
+  transform: translateX(-56px);
+}
+
+.menu__cards__block:hover > .menu--cards-animation {
+  transform: translateX(-56px);
 }
 
 /*# sourceMappingURL=style.css.map */
