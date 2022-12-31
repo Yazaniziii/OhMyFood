@@ -6,12 +6,12 @@
 
 .fas-heart:hover {
     opacity: 1;
+    transform: scale(1.1);
     @include linearGradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    transform: scale(1.1);
 }
 
 //Animation Arrow
@@ -39,10 +39,12 @@
 @keyframes delay {
     from {
         opacity: 0;
+        transform: translateY(30px);
     }
 
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -82,9 +84,12 @@
     animation-delay: 0.9s;
 }
 
-.delay9 {
+.delay10 {
     animation-delay: 1s;
 }
+
+// Animation moove cards
+
 
 
 
