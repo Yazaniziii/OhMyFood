@@ -19,6 +19,15 @@
 }
 
 //main
+
+.img-header-menu {
+    max-height: 32rem;
+    max-width: 100vw;
+    width: 100vw;
+    object-fit: cover;
+    position: inherit;
+}
+
     //menu
 
 .menu {
@@ -27,11 +36,13 @@
     justify-content: center;
     position: relative;
     width: 100%;
+    margin: 0 0 -50px 0;
     top: -50px;
     background: $color-background;
     border-radius: 40px 40px 0px 0px;
     padding: 2rem 1rem;
     max-width: 1200px;
+    z-index: 1;
 
     &__container {
         display: flex;
@@ -147,7 +158,6 @@
 
         }
 
-       
     }
 
     // button
@@ -168,6 +178,7 @@
 
     .menu {
         margin: auto;
+        margin-bottom: -50px;
 
         &__container {
             max-width: 800px;

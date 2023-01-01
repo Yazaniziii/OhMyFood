@@ -2,6 +2,7 @@
 .fas-heart {
     opacity: 0;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .fas-heart:hover {
@@ -48,6 +49,7 @@
     }
 }
 
+// Animation moove cards
 .delay1 {
     animation-delay: 0.1s;
 }
@@ -88,8 +90,100 @@
     animation-delay: 1s;
 }
 
-// Animation moove cards
+// Animation Loader
 
-
-
+.loader__container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    animation: hide-loader 3s;
+  
+    &--box {
+      width: 200px;
+      height: 100%;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    
+      &--boxin {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    
+      .rect {
+        background: #333;
+        display: inline-block;
+        height: 80px;
+        width: 8px;
+        margin: 0 1px;
+        animation: etire 1.2s 4 ease-in-out forwards;
+      }
+      .rect1 {
+        background-color: $color-primary;
+        animation-delay: -1.2s;
+      }
+      .rect2 {
+        animation-delay: -1.1s;
+        background-color: $color-second;
+      }
+      .rect3 {
+        animation-delay: -1s;
+        background-color: $color-tiers;
+      }
+    }
+  }
+  
+  @keyframes etire {
+    0% {
+      transform: scaleY(0.5);
+    }
+    20% {
+      transform: scaleY(1);
+    }
+    40% {
+      transform: scaleY(0.5);
+    }
+    100% {
+      transform: scaleY(0.5);
+    }
+  }
+  
+  @keyframes hide-loader {
+    0% {
+     opacity: 1;
+     visibility: visible;
+    }
+    90% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  // Animation Apparition Menu
+  
+  @keyframes apparition {
+    
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+    
+  }
+  
 

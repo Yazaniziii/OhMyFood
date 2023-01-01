@@ -278,17 +278,27 @@ li {
   margin: auto;
 }
 
+.img-header-menu {
+  max-height: 32rem;
+  max-width: 100vw;
+  width: 100vw;
+  object-fit: cover;
+  position: inherit;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   width: 100%;
+  margin: 0 0 -50px 0;
   top: -50px;
   background: #f7f7f7;
   border-radius: 40px 40px 0px 0px;
   padding: 2rem 1rem;
   max-width: 1200px;
+  z-index: 1;
 }
 .menu__container {
   display: flex;
@@ -402,6 +412,7 @@ li {
 
   .menu {
     margin: auto;
+    margin-bottom: -50px;
   }
   .menu__container {
     max-width: 800px;
@@ -439,12 +450,12 @@ li {
 .button:active {
   background: #fff;
   color: #9356DC;
-  border: 1px solid #9356DC;
 }
 
 .fas-heart {
   opacity: 0;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .fas-heart:hover {
@@ -522,6 +533,91 @@ li {
 
 .delay10 {
   animation-delay: 1s;
+}
+
+.loader__container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  animation: hide-loader 3s;
+}
+.loader__container--box {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.loader__container--box--boxin {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.loader__container--box .rect {
+  background: #333;
+  display: inline-block;
+  height: 80px;
+  width: 8px;
+  margin: 0 1px;
+  animation: etire 1.2s 4 ease-in-out forwards;
+}
+.loader__container--box .rect1 {
+  background-color: #9356DC;
+  animation-delay: -1.2s;
+}
+.loader__container--box .rect2 {
+  animation-delay: -1.1s;
+  background-color: #FF79DA;
+}
+.loader__container--box .rect3 {
+  animation-delay: -1s;
+  background-color: #99E2D0;
+}
+
+@keyframes etire {
+  0% {
+    transform: scaleY(0.5);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+  40% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(0.5);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
