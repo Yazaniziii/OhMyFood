@@ -79,6 +79,7 @@ li {
 }
 .fonctionnement__container__cards {
   display: flex;
+  align-items: center;
   position: relative;
   width: 100%;
   column-gap: 1rem;
@@ -129,6 +130,16 @@ li {
   }
   .fonctionnement__container__cards {
     min-width: 260px;
+  }
+}
+@media (max-width: 350px) {
+  .fonctionnement {
+    font-size: 13.5px;
+  }
+
+  .fonctionnement--number {
+    top: 28px;
+    left: 0;
   }
 }
 .restaurants {
