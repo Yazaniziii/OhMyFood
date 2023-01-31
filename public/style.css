@@ -362,7 +362,7 @@ li {
   opacity: 0;
 }
 .menu__cards__block__description {
-  padding: 0.6rem 1rem 0.6rem 0.6rem;
+  padding: 0.6rem 0 0.6rem 0.6rem;
   display: flex;
   flex-direction: column;
   font-weight: 300;
@@ -376,13 +376,11 @@ li {
   font-weight: 500;
   margin-bottom: 0.3rem;
   text-overflow: ellipsis;
-  padding-right: 1.5rem;
   overflow: hidden;
 }
 .menu__cards__block__description p {
   text-overflow: ellipsis;
   overflow: hidden;
-  padding-right: 1rem;
 }
 .menu__cards__block .menu--cards-price {
   font-weight: 600;
@@ -442,6 +440,15 @@ li {
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 400px) {
+  .header-menu {
+    padding: 0 1rem;
+  }
+
+  .menu__container__title {
+    font-size: 1.3rem;
+  }
+}
 .button {
   padding: 0.8rem 1rem;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -488,12 +495,8 @@ li {
   box-shadow: none;
 }
 
-.menu__cards__block:hover > .menu--cards-price {
-  transform: translateX(-56px);
-}
-
 .menu__cards__block:hover > .menu--cards-animation {
-  transform: translateX(-56px);
+  margin: 0;
 }
 
 @keyframes delay {

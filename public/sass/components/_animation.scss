@@ -27,12 +27,9 @@
 }
 
 // Animation Cards icone
-.menu__cards__block:hover > .menu--cards-price {
-        transform:translateX(-56px);
-}
 
 .menu__cards__block:hover > .menu--cards-animation {
-        transform:translateX(-56px);
+  margin: 0;
 }
 
 // Animation timing cards

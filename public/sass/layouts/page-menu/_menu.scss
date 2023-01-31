@@ -102,7 +102,7 @@
             opacity: 0;
 
             &__description {
-                padding: 0.6rem 1rem 0.6rem 0.6rem;
+                padding: 0.6rem 0 0.6rem 0.6rem;
                 display: flex;
                 flex-direction: column;
                 font-weight: 300;
@@ -116,14 +116,12 @@
                     font-weight: 500;
                     margin-bottom: 0.3rem;
                     text-overflow: ellipsis;
-                    padding-right: 1.5rem;
                     overflow: hidden;
                 }
 
                 p {
                     text-overflow: ellipsis;
                     overflow: hidden;
-                    padding-right: 1rem;
                 }
 
             }
@@ -200,4 +198,14 @@
         }
     }
 
+}
+
+@media (max-width: 400px) {
+    .header-menu {
+        padding: 0 1rem;
+    }
+
+    .menu__container__title {
+        font-size: 1.3rem;
+    }
 }
